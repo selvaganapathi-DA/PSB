@@ -80,7 +80,7 @@ export default function MobileSiteAppPage() {
             <div className="flex-1 py-4 space-y-4 text-[12px]">
               {/* Header Title */}
               <div className="flex items-center gap-2">
-                <img src="/logo.png" className="h-7 w-7 rounded bg-white p-0.5" alt="Logo" />
+                <img src={`${import.meta.env.BASE_URL}logo.png`} className="h-7 w-7 rounded bg-white p-0.5" alt="Logo" />
                 <div>
                   <h3 className="font-bold text-[12.5px] text-concrete-950 dark:text-blueprint-100 uppercase">VARUVI SITE</h3>
                   <p className="text-[10px] text-concrete-300">Supervisor Terminal</p>

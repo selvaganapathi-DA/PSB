@@ -332,7 +332,7 @@ export default function SitemapPage() {
             className="flex flex-col items-center justify-center w-full h-full rounded-2xl border border-blueprint-200 bg-blueprint-900 text-white p-4 shadow-glass text-center relative overflow-hidden"
           >
             <div className="absolute inset-0 bg-blueprint-grid bg-grid opacity-10" />
-            <img src="/logo.png" className="h-16 w-16 object-contain mb-2 bg-white rounded-xl p-1 shadow-md" alt="Logo" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} className="h-16 w-16 object-contain mb-2 bg-white rounded-xl p-1 shadow-md" alt="Logo" />
             <h2 className="font-display text-[16px] font-bold tracking-wide">
               VARUVI
             </h2>
