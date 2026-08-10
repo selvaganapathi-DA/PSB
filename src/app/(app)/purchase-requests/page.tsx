@@ -39,27 +39,16 @@ export default function PurchaseRequestsPage() {
     }
   };
 
-<<<<<<< HEAD
   const [activeTab, setActiveTab] = useState<"requisitions" | "rfq" | "grn" | "returns">("requisitions");
-
-=======
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
           <h1 className="font-display text-[22px] font-semibold text-concrete-900 dark:text-blueprint-100">
-<<<<<<< HEAD
             Material Requisitions & Procurement
           </h1>
           <p className="mt-1 text-[13px] text-concrete-300">
             Verify site material requests, generate RFQs, compare vendor terms, log Goods Receipt Notes (GRN), and track returns.
-=======
-            Purchase Requests (PR)
-          </h1>
-          <p className="mt-1 text-[13px] text-concrete-300">
-            Create, audit, and authorize internal site material purchase requests.
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
           </p>
         </div>
         <button
@@ -70,7 +59,6 @@ export default function PurchaseRequestsPage() {
         </button>
       </div>
 
-<<<<<<< HEAD
       {/* Tabs */}
       <div className="flex border-b border-concrete-100 dark:border-white/5">
         {[
@@ -195,9 +183,6 @@ export default function PurchaseRequestsPage() {
           </table>
         </div>
       )}
-=======
-      <DataTable rows={mockRequests} columns={columns} searchPlaceholder="Search requests..." />
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
 
       <Modal open={modalOpen} onClose={() => { setModalOpen(false); setCurrentStep(0); }} title="Create Material Purchase Request" maxWidth="md">
         <div className="space-y-6">

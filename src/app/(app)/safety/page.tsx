@@ -132,11 +132,7 @@ export default function SafetyPage() {
     },
   ];
 
-<<<<<<< HEAD
   const [activeTab, setActiveTab] = useState<"incidents" | "toolbox" | "permits" | "ppe">("incidents");
-
-=======
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
@@ -145,11 +141,7 @@ export default function SafetyPage() {
             Safety & Health Compliance (HSE)
           </h1>
           <p className="mt-1 text-[13px] text-concrete-300">
-<<<<<<< HEAD
             File site hazard logs, register safety gear checks, verify permits to work, and record toolbox talks.
-=======
-            File site hazard logs, register safety gear checks, and report compliance incidents.
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
           </p>
         </div>
         <button
@@ -160,7 +152,6 @@ export default function SafetyPage() {
         </button>
       </div>
 
-<<<<<<< HEAD
       {/* Tabs */}
       <div className="flex border-b border-concrete-100 dark:border-white/5">
         {[
@@ -286,9 +277,6 @@ export default function SafetyPage() {
           </table>
         </div>
       )}
-=======
-      <DataTable rows={incidentsList} columns={columns} searchPlaceholder="Search safety logs..." />
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
 
       <Modal
         open={modalOpen}

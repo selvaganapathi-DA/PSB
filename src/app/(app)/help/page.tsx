@@ -40,7 +40,6 @@ export default function HelpCenterPage() {
           <div className="space-y-3 text-[13px]">
             <div>
               <p className="text-concrete-350">IT Helpline Email</p>
-<<<<<<< HEAD
               <p className="font-semibold text-concrete-900 dark:text-blueprint-100">support@varuvi.in</p>
             </div>
             <div>
@@ -52,13 +51,6 @@ export default function HelpCenterPage() {
             <div>
               <p className="text-concrete-350">Phone Helpline</p>
               <p className="font-semibold text-concrete-900 dark:text-blueprint-100">+91 90929 79396</p>
-=======
-              <p className="font-semibold text-concrete-900 dark:text-blueprint-100">support@buildforge.co.in</p>
-            </div>
-            <div>
-              <p className="text-concrete-350">Phone Helpline</p>
-              <p className="font-semibold text-concrete-900 dark:text-blueprint-100">+91 44 2828 9000</p>
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
             </div>
             <div>
               <p className="text-concrete-350">Operational Hours</p>

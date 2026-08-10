@@ -16,11 +16,7 @@ export default function DashboardPage() {
     <div className="space-y-5">
       <div>
         <h1 className="font-display text-[22px] font-semibold text-concrete-900 dark:text-blueprint-100">
-<<<<<<< HEAD
           Hello! PSB
-=======
-          Good morning, Arjun 👋
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
         </h1>
         <p className="mt-1 text-[13px] text-concrete-300">
           Here&apos;s what&apos;s happening across your 6 active sites today.

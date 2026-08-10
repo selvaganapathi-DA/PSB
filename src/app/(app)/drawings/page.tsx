@@ -97,11 +97,7 @@ export default function DrawingsPage() {
     setModalOpen(false);
   };
 
-<<<<<<< HEAD
   const [activeTab, setActiveTab] = useState<"sheets" | "bim" | "changes">("sheets");
-
-=======
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
@@ -110,11 +106,7 @@ export default function DrawingsPage() {
             Blueprints & Drawing Viewer
           </h1>
           <p className="mt-1 text-[13px] text-concrete-300">
-<<<<<<< HEAD
             Access architectural, structural, and electrical CAD layouts, BIM references, and Change Orders.
-=======
-            Access architectural, structural, and electrical CAD layouts.
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
           </p>
         </div>
         <button
@@ -125,7 +117,6 @@ export default function DrawingsPage() {
         </button>
       </div>
 
-<<<<<<< HEAD
       {/* Tabs */}
       <div className="flex border-b border-concrete-100 dark:border-white/5">
         {[
@@ -152,12 +143,6 @@ export default function DrawingsPage() {
           <div className="lg:col-span-2 space-y-5">
             <Card className="relative overflow-hidden">
               {selectedDrawing ? (
-=======
-      <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
-        <div className="lg:col-span-2 space-y-5">
-          <Card className="relative overflow-hidden">
-            {selectedDrawing ? (
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
               <>
                 <div className="flex items-center justify-between mb-3">
                   <div>
@@ -242,7 +227,6 @@ export default function DrawingsPage() {
           </Card>
         </div>
       </div>
-<<<<<<< HEAD
     )}
 
       {activeTab === "bim" && (
@@ -332,8 +316,6 @@ export default function DrawingsPage() {
           </div>
         </div>
       )}
-=======
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
 
       <Modal
         open={modalOpen}

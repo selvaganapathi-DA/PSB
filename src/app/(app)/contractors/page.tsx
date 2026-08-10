@@ -124,27 +124,16 @@ export default function ContractorsPage() {
     },
   ];
 
-<<<<<<< HEAD
   const [activeTab, setActiveTab] = useState<"directory" | "bills" | "retention">("directory");
-
-=======
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
           <h1 className="font-display text-[22px] font-semibold text-concrete-900 dark:text-blueprint-100">
-<<<<<<< HEAD
             Subcontractors & Billing
           </h1>
           <p className="mt-1 text-[13px] text-concrete-300">
             Coordinate contracting firms, verify Running Account (RA) bills, track advances, and monitor retention deductions.
-=======
-            Subcontractors Directory
-          </h1>
-          <p className="mt-1 text-[13px] text-concrete-300">
-            Coordinate specialized piling, masonry, finishing, and MEP third-party contracting firms.
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
           </p>
         </div>
         <button
@@ -155,7 +144,6 @@ export default function ContractorsPage() {
         </button>
       </div>
 
-<<<<<<< HEAD
       {/* Tabs */}
       <div className="flex border-b border-concrete-100 dark:border-white/5">
         {[
@@ -231,7 +219,7 @@ export default function ContractorsPage() {
             </h3>
             {[
               { contractor: "NPS Foundations", advance: "₹2,50,000", recovered: "₹1,25,000", balance: "₹1,25,000" },
-              { contractor: "Jai Steel Erectors", advance: "₹5,00,000", recovered: "₹1,50,000", balance: "₹3,50,000" },
+              { contractor: "Jai Steel Erectors", advance: "₹5,00,050", recovered: "₹1,50,000", balance: "₹3,50,000" },
             ].map((item, idx) => (
               <div key={idx} className="p-3 border border-concrete-100 dark:border-white/5 rounded-xl space-y-2">
                 <span className="font-bold text-concrete-800 dark:text-blueprint-100 block">{item.contractor}</span>
@@ -271,9 +259,6 @@ export default function ContractorsPage() {
           </div>
         </div>
       )}
-=======
-      <DataTable rows={contractorsList} columns={columns} searchPlaceholder="Search contractors..." />
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
 
       <Modal
         open={modalOpen}

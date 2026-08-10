@@ -13,14 +13,11 @@ import {
   ShieldAlert,
   GitBranch,
   FileSignature,
-<<<<<<< HEAD
   Compass,
   Coins,
   Home,
   Smartphone,
   UserCheck,
-=======
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
 } from "lucide-react";
 
 interface SitemapNode {
@@ -43,7 +40,6 @@ export default function SitemapPage() {
   // Nodes configurations scaled to a 1000x680 coordinate space
   const leftNodes: SitemapNode[] = [
     {
-<<<<<<< HEAD
       id: "pre-con",
       label: "PRE-CONSTRUCTION",
       subLabel: "Land, feasibility & rate analysis",
@@ -56,19 +52,13 @@ export default function SitemapPage() {
       color: "border-signal-amber text-signal-amber shadow-signal-amber/10",
     },
     {
-=======
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       id: "leads",
       label: "ENQUIRIES & LEAD CAPTURE",
       subLabel: "Leads pipeline and conversion",
       icon: Users,
       href: "/leads",
       x: 20,
-<<<<<<< HEAD
       y: 110,
-=======
-      y: 40,
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       width: 280,
       height: 60,
       color: "border-signal-orange text-signal-orange shadow-signal-orange/10",
@@ -80,11 +70,7 @@ export default function SitemapPage() {
       icon: Users,
       href: "/customers",
       x: 20,
-<<<<<<< HEAD
       y: 200,
-=======
-      y: 150,
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       width: 280,
       height: 60,
       color: "border-blueprint-500 text-blueprint-400 shadow-blueprint-500/10",
@@ -96,11 +82,7 @@ export default function SitemapPage() {
       icon: Calendar,
       href: "/site-reports",
       x: 20,
-<<<<<<< HEAD
       y: 290,
-=======
-      y: 260,
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       width: 280,
       height: 60,
       color: "border-signal-amber text-signal-amber shadow-signal-amber/10",
@@ -112,11 +94,7 @@ export default function SitemapPage() {
       icon: FileSignature,
       href: "/quotations",
       x: 20,
-<<<<<<< HEAD
       y: 380,
-=======
-      y: 370,
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       width: 280,
       height: 60,
       color: "border-signal-green text-signal-green shadow-signal-green/10",
@@ -125,7 +103,6 @@ export default function SitemapPage() {
 
   const rightNodes: SitemapNode[] = [
     {
-<<<<<<< HEAD
       id: "re-sales",
       label: "REAL ESTATE SALES",
       subLabel: "Property inventory & bookings",
@@ -150,25 +127,16 @@ export default function SitemapPage() {
       color: "border-signal-orange text-signal-orange shadow-signal-orange/10",
     },
     {
-=======
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       id: "automation",
       label: "AUTOMATION WORKFLOWS",
       subLabel: "System configurations",
       icon: Settings,
       href: "/settings",
       x: 700,
-<<<<<<< HEAD
       y: 200,
       width: 280,
       height: 60,
       color: "border-blueprint-500 text-blueprint-400 shadow-blueprint-500/10",
-=======
-      y: 40,
-      width: 280,
-      height: 60,
-      color: "border-signal-orange text-signal-orange shadow-signal-orange/10",
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
     },
     {
       id: "tasks",
@@ -177,11 +145,7 @@ export default function SitemapPage() {
       icon: ListChecks,
       href: "/tasks",
       x: 700,
-<<<<<<< HEAD
       y: 290,
-=======
-      y: 150,
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       width: 280,
       height: 60,
       color: "border-blueprint-500 text-blueprint-400 shadow-blueprint-500/10",
@@ -193,78 +157,41 @@ export default function SitemapPage() {
       icon: FileBarChart,
       href: "/reports",
       x: 700,
-<<<<<<< HEAD
       y: 380,
-=======
-      y: 260,
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       width: 280,
       height: 60,
       color: "border-signal-amber text-signal-amber shadow-signal-amber/10",
     },
-<<<<<<< HEAD
-=======
-    {
-      id: "portal",
-      label: "CLIENT PORTAL / DISPATCH",
-      subLabel: "Supplier messaging and updates",
-      icon: MessageSquare,
-      href: "/messages",
-      x: 700,
-      y: 370,
-      width: 280,
-      height: 60,
-      color: "border-signal-green text-signal-green shadow-signal-green/10",
-    },
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
+
   ];
 
   const bottomNodes: SitemapNode[] = [
     {
       id: "integrations",
       label: "INTEGRATIONS",
-<<<<<<< HEAD
       subLabel: "Third party API vendors",
       icon: GitBranch,
       href: "/vendors",
       x: 15,
       y: 530,
       width: 180,
-=======
-      subLabel: "Third party vendor systems",
-      icon: GitBranch,
-      href: "/vendors",
-      x: 35,
-      y: 530,
-      width: 210,
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       height: 60,
       color: "border-concrete-300 text-concrete-600 dark:text-blueprint-200 shadow-concrete-500/5",
     },
     {
       id: "pipeline",
       label: "SALES PIPELINE",
-<<<<<<< HEAD
       subLabel: "CRM contracts",
       icon: TrendingUp,
       href: "/crm",
       x: 210,
       y: 530,
       width: 180,
-=======
-      subLabel: "CRM contracts and deals",
-      icon: TrendingUp,
-      href: "/crm",
-      x: 275,
-      y: 530,
-      width: 210,
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       height: 60,
       color: "border-concrete-300 text-concrete-600 dark:text-blueprint-200 shadow-concrete-500/5",
     },
     {
       id: "dashboard",
-<<<<<<< HEAD
       label: "KPI DASHBOARDS",
       subLabel: "Project overviews",
       icon: LayoutDashboard,
@@ -272,20 +199,10 @@ export default function SitemapPage() {
       x: 410,
       y: 530,
       width: 180,
-=======
-      label: "BUSINESS DASHBOARDS",
-      subLabel: "KPIs and project overviews",
-      icon: LayoutDashboard,
-      href: "/dashboard",
-      x: 515,
-      y: 530,
-      width: 210,
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       height: 60,
       color: "border-concrete-300 text-concrete-600 dark:text-blueprint-200 shadow-concrete-500/5",
     },
     {
-<<<<<<< HEAD
       id: "mobile-app",
       label: "MOBILE SITE APP",
       subLabel: "GPS attendance & DPR",
@@ -306,16 +223,6 @@ export default function SitemapPage() {
       x: 810,
       y: 530,
       width: 180,
-=======
-      id: "infrastructure",
-      label: "INFRASTRUCTURE LAYER",
-      subLabel: "User permissions and audit logs",
-      icon: ShieldAlert,
-      href: "/user-management",
-      x: 755,
-      y: 530,
-      width: 210,
->>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       height: 60,
       color: "border-concrete-300 text-concrete-600 dark:text-blueprint-200 shadow-concrete-500/5",
     },
