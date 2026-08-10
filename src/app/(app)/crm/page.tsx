@@ -142,7 +142,10 @@ export default function CrmPage() {
         })),
     };
   });
+<<<<<<< HEAD
   const [activeTab, setActiveTab] = useState<"pipeline" | "brokers" | "sources">("pipeline");
+=======
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
 
   return (
     <div className="space-y-6">
@@ -152,7 +155,11 @@ export default function CrmPage() {
             CRM Sales Dashboard
           </h1>
           <p className="mt-1 text-[13px] text-concrete-300">
+<<<<<<< HEAD
             Track customer pipelines, contract valuations, broker commissions, and lead sources.
+=======
+            Track customer pipelines, contract valuations, and prospective tenders.
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
           </p>
         </div>
         <button
@@ -184,7 +191,11 @@ export default function CrmPage() {
           <div>
             <p className="text-[11.5px] text-concrete-300">Active Leads</p>
             <p className="text-[18px] font-bold text-concrete-900 dark:text-blueprint-100">
+<<<<<<< HEAD
               {leadsList.length} Accounts
+=======
+              {leadsList.length}
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
             </p>
           </div>
         </Card>
@@ -194,6 +205,7 @@ export default function CrmPage() {
             <Award className="h-6 w-6" />
           </div>
           <div>
+<<<<<<< HEAD
             <p className="text-[11.5px] text-concrete-300">Conversion Rate</p>
             <p className="text-[18px] font-bold text-concrete-900 dark:text-blueprint-100">
               {leadsList.length ? ((wonLeads / leadsList.length) * 100).toFixed(0) : 0}%
@@ -209,11 +221,17 @@ export default function CrmPage() {
             <p className="text-[11.5px] text-concrete-300">Won Value</p>
             <p className="text-[18px] font-bold text-concrete-900 dark:text-blueprint-100">
               ₹{(leadsList.filter(l => l.status === "Won").reduce((a, b) => a + b.value, 0) / 100000).toFixed(1)} Lakh
+=======
+            <p className="text-[11.5px] text-concrete-300">Won Leads</p>
+            <p className="text-[18px] font-bold text-concrete-900 dark:text-blueprint-100">
+              {wonLeads}
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
             </p>
           </div>
         </Card>
       </div>
 
+<<<<<<< HEAD
       {/* Tabs */}
       <div className="flex border-b border-concrete-100 dark:border-white/5">
         {[
@@ -324,6 +342,20 @@ export default function CrmPage() {
           </div>
         </div>
       )}
+=======
+      <Card>
+        <CardHeader title="Pipeline Stages Overview" subtitle="Drag and drop leads to advance stages" />
+        <div className="p-4">
+          <Kanban
+            initialColumns={kanbanColumns}
+            onTaskMove={handleTaskMove}
+            onAddTask={(colId) => handleAddClick(colId)}
+            onEditTask={(taskId) => handleEditClick(taskId)}
+            onDeleteTask={(taskId) => handleDeleteLead(taskId)}
+          />
+        </div>
+      </Card>
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
 
       <Modal
         open={modalOpen}

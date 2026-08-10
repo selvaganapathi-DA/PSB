@@ -57,12 +57,15 @@ import AuditLogsPage from "./app/(app)/audit-logs/page";
 import HelpPage from "./app/(app)/help/page";
 import SitemapPage from "./app/(app)/sitemap/page";
 
+<<<<<<< HEAD
 import PreConstructionPage from "./app/(app)/pre-construction/page";
 import RealEstateSalesPage from "./app/(app)/real-estate-sales/page";
 import FinancePage from "./app/(app)/finance/page";
 import CustomerPortalPage from "./app/(app)/customer-portal/page";
 import MobileSiteAppPage from "./app/(app)/mobile-site-app/page";
 
+=======
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Providers>
@@ -117,6 +120,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             <Route path="/user-management" element={<UserManagementPage />} />
             <Route path="/audit-logs" element={<AuditLogsPage />} />
             <Route path="/help" element={<HelpPage />} />
+<<<<<<< HEAD
             
             {/* New Construction ERP Lifecycle Pages */}
             <Route path="/pre-construction" element={<PreConstructionPage />} />
@@ -124,6 +128,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             <Route path="/finance" element={<FinancePage />} />
             <Route path="/customer-portal" element={<CustomerPortalPage />} />
             <Route path="/mobile-site-app" element={<MobileSiteAppPage />} />
+=======
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
           </Route>
           
           <Route path="*" element={<Navigate to="/dashboard" replace />} />

@@ -7,6 +7,7 @@ import { GridColDef } from "@mui/x-data-grid";
 import StatusChip from "@/components/ui/StatusChip";
 import { Modal } from "@/components/ui/Modal";
 import { useToast } from "@/components/ui/Toast";
+<<<<<<< HEAD
 import { Edit2, Trash2, LayoutGrid, AlertTriangle, Plus, ShieldAlert, CheckCircle2 } from "lucide-react";
 import { Material } from "@/types";
 
@@ -29,6 +30,18 @@ export default function MaterialsPage() {
   // Materials Form State
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedMaterial, setSelectedMaterial] = useState<Material | null>(null);
+=======
+import { Edit2, Trash2 } from "lucide-react";
+import { Material } from "@/types";
+
+export default function MaterialsPage() {
+  const { toast } = useToast();
+  const [materialsList, setMaterialsList] = useState<Material[]>(initialMaterials);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedMaterial, setSelectedMaterial] = useState<Material | null>(null);
+
+  // Form State
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
   const [name, setName] = useState("");
   const [category, setCategory] = useState("");
   const [unit, setUnit] = useState("");
@@ -37,6 +50,7 @@ export default function MaterialsPage() {
   const [reorderLevel, setReorderLevel] = useState("");
   const [warehouse, setWarehouse] = useState("");
 
+<<<<<<< HEAD
   // Wastage Logs State
   const [wastageLogs, setWastageLogs] = useState<WastageLog[]>([
     { id: "w1", siteName: "Skyline Business Tower", materialName: "Fe 550 TMT Steel Rebars", estimatedQty: 120, wastedQty: 14.5, unit: "Tons", unitCost: 58000, reason: "Bending and cutting scrap offcuts" },
@@ -57,6 +71,8 @@ export default function MaterialsPage() {
   const [wasteReason, setWasteReason] = useState("");
 
   // Material Actions
+=======
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
   const handleAddClick = () => {
     setSelectedMaterial(null);
     setName("");
@@ -107,11 +123,19 @@ export default function MaterialsPage() {
     };
 
     if (selectedMaterial) {
+<<<<<<< HEAD
+=======
+      // Edit
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       setMaterialsList((prev) =>
         prev.map((m) => (m.id === selectedMaterial.id ? { ...m, ...materialData } : m))
       );
       toast("Material updated successfully!");
     } else {
+<<<<<<< HEAD
+=======
+      // Add
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       const newMaterial: Material = {
         id: `m-${Date.now()}`,
         ...materialData,
@@ -119,6 +143,7 @@ export default function MaterialsPage() {
       setMaterialsList((prev) => [...prev, newMaterial]);
       toast("Material added successfully!");
     }
+<<<<<<< HEAD
     setModalOpen(false);
   };
 
@@ -181,11 +206,18 @@ export default function MaterialsPage() {
     setWastageModalOpen(false);
   };
 
+=======
+
+    setModalOpen(false);
+  };
+
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
   const columns: GridColDef[] = [
     { field: "name", headerName: "Material Name", flex: 2 },
     { field: "category", headerName: "Category", flex: 1.2 },
     { field: "unit", headerName: "Unit", flex: 0.8 },
     { field: "unitCost", headerName: "Unit Cost (₹)", flex: 1, valueFormatter: (v: any) => `₹${v}` },
+<<<<<<< HEAD
     {
       field: "stock",
       headerName: "Stock Status",
@@ -199,6 +231,17 @@ export default function MaterialsPage() {
               <span className="inline-flex items-center gap-1 rounded bg-red-50 px-1.5 py-0.5 text-[10px] font-bold text-red-600 dark:bg-red-950/30 dark:text-red-400">
                 <span className="relative flex h-1.5 w-1.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+=======
+    { field: "stock", headerName: "Current Stock", flex: 1.2, renderCell: (p) => {
+        const isLow = p.row.stock <= p.row.reorderLevel;
+        return (
+          <div className="flex items-center gap-2 mt-1">
+            <span>{p.value}</span>
+            {isLow && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-red-50 dark:bg-red-950/20 px-2 py-0.5 text-[11px] font-semibold text-red-600 dark:text-red-400 ring-1 ring-inset ring-red-600/20 dark:ring-red-500/20">
+                <span className="relative flex h-1.5 w-1.5 mr-1">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
                   <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-red-600 dark:bg-red-400"></span>
                 </span>
                 Low Stock
@@ -237,6 +280,7 @@ export default function MaterialsPage() {
 
   return (
     <div className="space-y-6">
+<<<<<<< HEAD
       <div>
         <h1 className="font-display text-[22px] font-semibold text-concrete-900 dark:text-blueprint-100 flex items-center gap-2">
           <LayoutGrid className="h-6 w-6 text-signal-orange" />
@@ -385,6 +429,27 @@ export default function MaterialsPage() {
       )}
 
       {/* Material Modal */}
+=======
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="font-display text-[22px] font-semibold text-concrete-900 dark:text-blueprint-100">
+            Materials Ledger
+          </h1>
+          <p className="mt-1 text-[13px] text-concrete-300">
+            Monitor rates, units, supplier catalogs, and basic material costs.
+          </p>
+        </div>
+        <button
+          onClick={handleAddClick}
+          className="rounded-xl bg-signal-orange px-4 py-2.5 text-[12.5px] font-semibold text-white transition-all hover:bg-signal-orange/90 shadow-card"
+        >
+          Add Material
+        </button>
+      </div>
+
+      <DataTable rows={materialsList} columns={columns} searchPlaceholder="Search materials..." />
+
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       <Modal
         open={modalOpen}
         onClose={() => setModalOpen(false)}
@@ -510,6 +575,7 @@ export default function MaterialsPage() {
           </div>
         </form>
       </Modal>
+<<<<<<< HEAD
 
       {/* Wastage Modal */}
       <Modal
@@ -634,6 +700,8 @@ export default function MaterialsPage() {
           </div>
         </form>
       </Modal>
+=======
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
     </div>
   );
 }

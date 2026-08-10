@@ -13,14 +13,20 @@ export const navSections: NavSection[] = [
     section: "Project Delivery",
     items: [
       { label: "Projects", href: "/projects", icon: "Building2" },
+<<<<<<< HEAD
       { label: "Pre-Construction", href: "/pre-construction", icon: "Compass" },
+=======
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       { label: "Timeline", href: "/timeline", icon: "GanttChartSquare" },
       { label: "Gantt Chart", href: "/gantt", icon: "AlignHorizontalDistributeCenter" },
       { label: "Calendar", href: "/calendar", icon: "CalendarDays" },
       { label: "Tasks", href: "/tasks", icon: "ListChecks" },
       { label: "Kanban Board", href: "/kanban", icon: "Kanban" },
       { label: "Daily Site Report", href: "/site-reports", icon: "ClipboardList" },
+<<<<<<< HEAD
       { label: "Mobile Site App", href: "/mobile-site-app", icon: "Smartphone" },
+=======
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
     ],
   },
   {
@@ -53,8 +59,11 @@ export const navSections: NavSection[] = [
       { label: "Customers", href: "/customers", icon: "UserSquare2" },
       { label: "CRM", href: "/crm", icon: "Handshake" },
       { label: "Leads", href: "/leads", icon: "Target" },
+<<<<<<< HEAD
       { label: "Real Estate Sales", href: "/real-estate-sales", icon: "Home" },
       { label: "Finance & Tax", href: "/finance", icon: "Coins" },
+=======
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       { label: "Quotations", href: "/quotations", icon: "FileSignature" },
       { label: "Invoices", href: "/invoices", icon: "Receipt", badge: 2 },
       { label: "Expenses", href: "/expenses", icon: "ReceiptText" },
@@ -76,7 +85,10 @@ export const navSections: NavSection[] = [
   {
     section: "Workspace",
     items: [
+<<<<<<< HEAD
       { label: "Customer Portal", href: "/customer-portal", icon: "UserCheck" },
+=======
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       { label: "Notifications", href: "/notifications", icon: "Bell" },
       { label: "Messages", href: "/messages", icon: "MessageSquare" },
       { label: "Settings", href: "/settings", icon: "Settings" },

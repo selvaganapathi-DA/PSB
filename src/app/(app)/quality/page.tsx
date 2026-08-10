@@ -122,8 +122,11 @@ export default function QualityPage() {
     },
   ];
 
+<<<<<<< HEAD
   const [activeTab, setActiveTab] = useState<"checklists" | "ncr" | "snag">("checklists");
 
+=======
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
@@ -132,7 +135,11 @@ export default function QualityPage() {
             QA/QC Inspection Checklists
           </h1>
           <p className="mt-1 text-[13px] text-concrete-300">
+<<<<<<< HEAD
             Register concrete cube test logs, compaction levels, NCR defects, and Snag lists.
+=======
+            Register concrete cube test logs, compaction levels, and structural finishing sign-offs.
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
           </p>
         </div>
         <button
@@ -143,6 +150,7 @@ export default function QualityPage() {
         </button>
       </div>
 
+<<<<<<< HEAD
       {/* Tabs */}
       <div className="flex border-b border-concrete-100 dark:border-white/5">
         {[
@@ -239,6 +247,9 @@ export default function QualityPage() {
           </table>
         </div>
       )}
+=======
+      <DataTable rows={checklistsList} columns={columns} searchPlaceholder="Search checklists..." />
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
 
       <Modal
         open={modalOpen}

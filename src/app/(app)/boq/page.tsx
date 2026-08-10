@@ -110,8 +110,11 @@ export default function BoqPage() {
     setModalOpen(false);
   };
 
+<<<<<<< HEAD
   const [activeTab, setActiveTab] = useState<"master" | "contractor" | "variance">("master");
 
+=======
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
   const columns: GridColDef[] = [
     { field: "srNo", headerName: "Sr No", flex: 0.5 },
     { field: "description", headerName: "Item Description", flex: 2 },
@@ -153,7 +156,11 @@ export default function BoqPage() {
             Bill of Quantities (BOQ)
           </h1>
           <p className="mt-1 text-[13px] text-concrete-300">
+<<<<<<< HEAD
             Check civil, architectural, and structural work line items rates, contractor bids, and quantity deviations.
+=======
+            Check civil, architectural, and structural work line items rates and estimates.
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
           </p>
         </div>
         <button
@@ -164,6 +171,7 @@ export default function BoqPage() {
         </button>
       </div>
 
+<<<<<<< HEAD
       {/* Tabs */}
       <div className="flex border-b border-concrete-100 dark:border-white/5">
         {[
@@ -185,12 +193,15 @@ export default function BoqPage() {
         ))}
       </div>
 
+=======
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       <div className="rounded-2xl border border-concrete-100 bg-white p-5 shadow-card dark:border-white/5 dark:bg-blueprint-850">
         <div className="flex justify-between items-center mb-4">
           <div>
             <h3 className="font-display text-[15px] font-semibold text-concrete-900 dark:text-blueprint-100">
               {activeBoq.projectName}
             </h3>
+<<<<<<< HEAD
             <p className="text-[12.5px] text-concrete-300">
               {activeTab === "master"
                 ? "Master estimate sheet"
@@ -198,6 +209,9 @@ export default function BoqPage() {
                 ? "Contractor BOQ schedule & pricing"
                 : "Quantity variance analysis & deviation cost"}
             </p>
+=======
+            <p className="text-[12.5px] text-concrete-300">Master estimate sheet</p>
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
           </div>
           <div className="text-right">
             <span className="text-[11.5px] text-concrete-350">BOQ Value</span>
@@ -207,6 +221,7 @@ export default function BoqPage() {
           </div>
         </div>
 
+<<<<<<< HEAD
         {activeTab === "master" && (
           <DataTable rows={activeBoq.items} columns={columns} searchPlaceholder="Search BOQ items..." />
         )}
@@ -276,6 +291,9 @@ export default function BoqPage() {
             </table>
           </div>
         )}
+=======
+        <DataTable rows={activeBoq.items} columns={columns} searchPlaceholder="Search BOQ items..." />
+>>>>>>> 150c580c8ad7708d76456ad4b3d8b7f8ffa67035
       </div>
 
       <Modal
