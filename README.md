@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BuildForge ERP — Construction ERP Frontend
 
 Frontend-only construction ERP scaffold built with Next.js 15 (App Router), React 19,
@@ -67,3 +68,7 @@ Stepper, file/image upload, loading skeletons, empty/error states, toast notific
 - ApexCharts components are client components (`"use client"`) and dynamically
   imported with `ssr: false`, since ApexCharts needs `window`.
 - `@mui/x-data-grid` is already a dependency for when the data-table pages are built.
+=======
+# PSB
+Builder Developers &amp; Constructions
+>>>>>>> 764f262a642e43a3ccebc4e57dbc42e99c1db586
