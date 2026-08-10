@@ -21,7 +21,7 @@ function WorkspaceSwitcher({ collapsed }: { collapsed: boolean }) {
           collapsed && "justify-center"
         )}
       >
-        <img src="/logo.png" className="h-8 w-8 shrink-0 rounded-lg object-contain bg-white p-0.5" alt="Varuvi Logo" />
+        <img src="/public/logo.png" className="h-8 w-8 shrink-0 rounded-lg object-contain bg-white p-0.5" alt="Varuvi Logo" />
         {!collapsed && (
           <>
             <span className="min-w-0 flex-1">
